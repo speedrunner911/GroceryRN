@@ -1,0 +1,8 @@
+{
+  "buttons": {
+    "add": "Add",
+    "remove": "Remove",
+    "create": "Create",
+    "update": "Update"
+  }
+}

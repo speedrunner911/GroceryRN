@@ -1,0 +1,85 @@
+{
+  "groceryList": [
+    {
+      "id": "1",
+      "name": "Apples",
+      "quantity": 60,
+      "is_bought": false,
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkzda-rJ_6HJq6sNvOYyVjOh48GjQFHJ83Wg&s",
+      "description": "Fresh and crunchy apples, perfect for a healthy snack."
+    },
+    {
+      "id": "2",
+      "name": "Bread",
+      "quantity": 9,
+      "is_bought": false,
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6tzUUL-_tsLf0CbKs8UdXYrseMPS4TqIuSg&s",
+      "description": "Whole wheat bread, soft and freshly baked."
+    },
+    {
+      "id": "3",
+      "name": "Milk",
+      "quantity": 1,
+      "is_bought": false,
+      "image_url": "https://cdn.britannica.com/77/200377-050-4326767F/milk-splashing-glass.jpg",
+      "description": "One liter of fresh dairy milk, perfect for cereals or baking."
+    },
+    {
+      "id": "4",
+      "name": "Eggs",
+      "quantity": 12,
+      "is_bought": false,
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvOVt-jbznzVr9MiaghVDR1NBQaq0GXFAO3A&s",
+      "description": "A dozen fresh free-range eggs for your breakfast or baking needs."
+    },
+    {
+      "id": "5",
+      "name": "Bananas",
+      "quantity": 6,
+      "is_bought": true,
+      "image_url": "https://media.istockphoto.com/id/173242750/photo/banana-bunch.jpg?s=612x612&w=0&k=20&c=MAc8AXVz5KxwWeEmh75WwH6j_HouRczBFAhulLAtRUU=",
+      "description": "A bunch of ripe bananas packed with energy and nutrients."
+    },
+    {
+      "id": "6",
+      "name": "Carrots",
+      "quantity": 3,
+      "is_bought": true,
+      "image_url": "https://t4.ftcdn.net/jpg/02/28/90/67/360_F_228906712_r4bb71gSmKvyDHq54JvjXAhKWpQiqWvX.jpg",
+      "description": "Fresh and crunchy carrots, great for salads or soups."
+    },
+    {
+      "id": "7",
+      "name": "Tomatoes",
+      "quantity": 4,
+      "bought": true,
+      "image_url": "https://t4.ftcdn.net/jpg/00/60/56/89/360_F_60568941_XGMX5shUGjF6Oz3B21ICojozyf1FBqmY.jpg",
+      "description": "Juicy and ripe tomatoes, ideal for cooking or salads.",
+      "is_bought": true
+    },
+    {
+      "id": "8",
+      "name": "Potatoes",
+      "quantity": 10,
+      "is_bought": false,
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ7oMJWQCH8_SQ43VbkMCkv3pvTVlBds43jQ&s",
+      "description": "A large batch of starchy potatoes, great for fries or baking."
+    },
+    {
+      "id": "9",
+      "name": "Onions",
+      "quantity": 5,
+      "is_bought": false,
+      "image_url": "https://t3.ftcdn.net/jpg/00/55/63/16/360_F_55631648_mAPu37JG8NAG71A3TrVvTLD0NMLtS2U5.jpg",
+      "description": "Flavorful onions, perfect for cooking and adding depth to dishes."
+    },
+    {
+      "id": "10",
+      "name": "Chicken",
+      "quantity": 3,
+      "is_bought": false,
+      "image_url": "https://thumbs.dreamstime.com/b/whole-roasted-chicken-wooden-cutting-board-78354675.jpg",
+      "description": "Fresh chicken breast, great for grilling or roasting."
+    }
+  ]
+}
