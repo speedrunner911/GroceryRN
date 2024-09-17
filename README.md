@@ -20,13 +20,6 @@ Not required, but it will be a benefit
 Multiple build variants for Staging and Production
 Any additional functionality
 
-What we can do:
-- remove json-server libs and remove db.json from mobile app
-- add splash screen during inital open to make requests and cache results
-- add response type for all requests in react-query
-- migrate eslint to v9
-
-
 How to run and app?
 ```
 yarn install

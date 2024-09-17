@@ -8,10 +8,10 @@ import {
 } from '@gluestack-ui/themed';
 import { useNavigation } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
+import { scale } from 'react-native-size-matters';
 
 import useGrocery from '../hooks/useGrocery';
 import { RootStackParamsList } from '../MainNavigator';
-import { scale } from 'react-native-size-matters';
 import { GroceryType } from '../types';
 
 interface GroceryProps {
@@ -99,7 +99,7 @@ const Grocery = ({ route }: GroceryProps) => {
         />
       </View>
       <View mt="$2">
-        <Text>{t('label.quantity')}:</Text>
+        <Text>{t('labels.quantity')}:</Text>
         <View mt="$2" alignItems="center" flexDirection="row">
           <Button mr="$4" onPress={onDecreaseQuantity} disabled={quantity === '1'}>
             <ButtonIcon as={RemoveIcon} />

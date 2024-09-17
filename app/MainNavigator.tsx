@@ -5,11 +5,13 @@ import { useTranslation } from 'react-i18next';
 
 import Home from './screens/Home';
 import Grocery from './screens/Grocery';
+import Splash from './screens/Splash';
 import { GroceryType } from "./types"
 
 const Stack = createNativeStackNavigator<RootStackParamsList>();
 
 export type RootStackParamsList = {
+  splash: undefined;
   home: undefined;
   grocery: {
     item: GroceryType;
@@ -27,7 +29,8 @@ const MainNavigator = () => {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="home">
+      <Stack.Navigator initialRouteName="splash">
+        <Stack.Screen name="splash" options={{ headerShown: false }} component={Splash} />
         <Stack.Screen name="home" options={{ headerTitle: t('headers.grocery_list') }} component={Home} />
         <Stack.Screen name="grocery" component={Grocery} />
       </Stack.Navigator>

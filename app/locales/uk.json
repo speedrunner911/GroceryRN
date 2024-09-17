@@ -4,5 +4,14 @@
     "remove": "Вилучити",
     "create": "Створити",
     "update": "Оновити"
+  },
+  "labels": {
+    "empty_list": "Пустий лист",
+    "bought": "Куплено",
+    "quantity": "Кількість",
+    "fetching_data": "Загрузка данних"
+  },
+  "headers": {
+    "grocery_list": "Список покупок"
   }
 }

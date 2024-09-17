@@ -11,8 +11,8 @@
     {
       "id": "2",
       "name": "Bread",
-      "quantity": 9,
-      "is_bought": false,
+      "quantity": 12,
+      "is_bought": true,
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6tzUUL-_tsLf0CbKs8UdXYrseMPS4TqIuSg&s",
       "description": "Whole wheat bread, soft and freshly baked."
     },
