@@ -22,8 +22,6 @@ Any additional functionality
 
 What we can do:
 - remove json-server libs and remove db.json from mobile app
-- add light and dark theme support
-- update all text to use translations
 - add splash screen during inital open to make requests and cache results
 - add response type for all requests in react-query
 - migrate eslint to v9
@@ -33,6 +31,6 @@ How to run and app?
 ```
 yarn install
 npx json-server db.json
-npx react-native run-andoid
+npm run android:development
 npx react-native start
 ```

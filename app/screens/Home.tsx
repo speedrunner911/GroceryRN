@@ -2,13 +2,15 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { View, Text } from '@gluestack-ui/themed';
 import { FlashList } from '@shopify/flash-list';
+import { scale } from 'react-native-size-matters';
+import { useTranslation } from 'react-i18next';
 
 import useGrocery from '../hooks/useGrocery';
 import GroceryItem from '../components/ui/GroceryItem';
-import { scale } from 'react-native-size-matters';
 
 const Home = () => {
   const { groceries: { data } } = useGrocery();
+  const { t } = useTranslation();
 
   return (
     <View style={styles.container}>
@@ -22,7 +24,7 @@ const Home = () => {
         estimatedItemSize={100}
         ListEmptyComponent={
           <View mt="$4">
-            <Text textAlign="center" color="black">Empty Lit</Text>
+            <Text textAlign="center" color="black">{t('labels.empty_list')}</Text>
           </View>
         }
       />

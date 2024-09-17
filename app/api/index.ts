@@ -1,7 +1,5 @@
 import Config from 'react-native-config';
 
-console.log('Config: ', Config)
-
 import { GroceryType } from '../types';
 
 export const fetchGroceries = async () => {

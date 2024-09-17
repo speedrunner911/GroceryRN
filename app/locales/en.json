@@ -4,5 +4,13 @@
     "remove": "Remove",
     "create": "Create",
     "update": "Update"
+  },
+  "labels": {
+    "empty_list": "Empty List",
+    "bought": "Bought",
+    "quantity": "Quantity"
+  },
+  "headers": {
+    "grocery_list": "Grocery List"
   }
 }

@@ -7,6 +7,7 @@ import {
   InputField, Button, ButtonText, ButtonIcon, AddIcon, RemoveIcon,
 } from '@gluestack-ui/themed';
 import { useNavigation } from '@react-navigation/native';
+import { useTranslation } from 'react-i18next';
 
 import useGrocery from '../hooks/useGrocery';
 import { RootStackParamsList } from '../MainNavigator';
@@ -25,6 +26,7 @@ type CreateEventStep2Type = RouteProp<
 const Grocery = ({ route }: GroceryProps) => {
   const {params: {item}} = route;
   const navigation = useNavigation();
+  const { t } = useTranslation();
 
   const {
     updateGrocery: { update, isLoading: isUpdatingLoading },
@@ -88,7 +90,7 @@ const Grocery = ({ route }: GroceryProps) => {
       </Heading>
       <Text size="sm">{item.description}</Text>
       <View mt="$2" alignItems="center" flexDirection="row">
-        <Text mr="$2">Bought:</Text>
+        <Text mr="$2">{t('labels.bought')}:</Text>
         <Switch
           size="md"
           isDisabled={false}
@@ -97,7 +99,7 @@ const Grocery = ({ route }: GroceryProps) => {
         />
       </View>
       <View mt="$2">
-        <Text>Quantity:</Text>
+        <Text>{t('label.quantity')}:</Text>
         <View mt="$2" alignItems="center" flexDirection="row">
           <Button mr="$4" onPress={onDecreaseQuantity} disabled={quantity === '1'}>
             <ButtonIcon as={RemoveIcon} />
@@ -117,11 +119,11 @@ const Grocery = ({ route }: GroceryProps) => {
       </View>
       <Button mt="$4" bg={isUpdatingLoading || !canUpdate ? '$darkBlue600' : ''} onPress={onUpdateItem} isDisabled={isUpdatingLoading || !canUpdate}>
         {isUpdatingLoading && <ButtonSpinner mr="$1" />}
-        <ButtonText>Update</ButtonText>
+        <ButtonText>{t('buttons.update')}</ButtonText>
       </Button>
       <Button mt="$4" bgColor="red" onPress={onRemoveItem} isDisabled={isRemovingLoading}>
         {isRemovingLoading && <ButtonSpinner mr="$1" />}
-        <ButtonText>Remove</ButtonText>
+        <ButtonText>{t('buttons.remove')}</ButtonText>
       </Button>
     </Card>
   );

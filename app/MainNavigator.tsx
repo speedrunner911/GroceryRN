@@ -1,6 +1,7 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import { useTranslation } from 'react-i18next';
 
 import Home from './screens/Home';
 import Grocery from './screens/Grocery';
@@ -22,10 +23,12 @@ declare global {
 }
 
 const MainNavigator = () => {
+  const { t } = useTranslation();
+
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="home">
-        <Stack.Screen name="home" options={{ headerTitle: 'Grocery List' }} component={Home} />
+        <Stack.Screen name="home" options={{ headerTitle: t('headers.grocery_list') }} component={Home} />
         <Stack.Screen name="grocery" component={Grocery} />
       </Stack.Navigator>
     </NavigationContainer>
